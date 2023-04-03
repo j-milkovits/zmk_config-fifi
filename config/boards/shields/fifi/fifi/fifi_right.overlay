@@ -1,7 +1,7 @@
 #include "fifi.dtsi"
 
 &default_transform {
-	col-offset = <6>;
+	col-offset = <5>;
 };
 
 &kscan0 {
@@ -11,6 +11,5 @@
 		, <&pro_micro_a  0 GPIO_ACTIVE_HIGH>
 		, <&pro_micro_a  1 GPIO_ACTIVE_HIGH>
 		, <&pro_micro_a  2 GPIO_ACTIVE_HIGH>
-		, <&pro_micro_a  3 GPIO_ACTIVE_HIGH>
 		;
 };
