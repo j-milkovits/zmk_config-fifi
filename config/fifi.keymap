@@ -76,7 +76,7 @@
             bindings = <
                 &trans          &trans          &trans          &trans          &trans          &kp PG_UP       &trans          &trans          &trans          &trans        
                 &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHIFT      &trans          &kp PG_DN       &kp LEFT        &kp UP          &kp DOWN        &kp RIGHT    
-                &LC(Z)          &kp LC(X)       &kp LC(C)       &kp LC(V)       &LC(Y)          &kp INS         &kp HOME        &kp END         &kp CAPS        &trans      
+                &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LC(Y)          &kp INS         &kp HOME        &kp END         &kp CAPS        &trans      
                                                 &trans          &trans          &trans          &kp SPACE       &kp RET         &kp ESC
             >;
     };
