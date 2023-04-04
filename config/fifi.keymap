@@ -48,76 +48,76 @@
 
     qwerty_layer {
         label = "QWERTY";
-        // -----------------------------------------------------------------------------------------
-        // |      |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |      |
-        // |      |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |      |
-        // |      |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |      |
+        // -------------------------------------------------------------------
+        // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
+        // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
+        // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
         //   
         bindings = <      
-            &none       &kp Q       &kp W       &kp E           &kp R           &kp T            &kp Y          &kp U           &kp I           &kp O       &kp P           &none
-            &none       &hl LGUI A  &hl LALT S  &hl LCTRL D     &hm LSHIFT F    &kp G            &kp H          &hm RSHIFT J    &hm RCTRL K     &hm LALT L  &hm RGUI APOS   &none 
-            &none       &kp Z       &kp X       &kp C           &kp V           &kp B            &kp N          &kp M           &kp COMMA       &kp DOT     &kp FSLH        &none
-                                                &lm MEDIA DEL   &lm NAV BSPC    &lm MOUSE TAB    &lm SYM SPACE  &lm NUM RET     &lm FN ESC
+            &kp Q       &kp W       &kp E           &kp R           &kp T            &kp Y          &kp U           &kp I           &kp O       &kp P           
+            &hl LGUI A  &hl LALT S  &hl LCTRL D     &hm LSHIFT F    &kp G            &kp H          &hm RSHIFT J    &hm RCTRL K     &hm LALT L  &hm RGUI SEMI   
+            &kp Z       &kp X       &kp C           &kp V           &kp B            &kp N          &kp M           &kp COMMA       &kp DOT     &kp FSLH       
+                                    &lm MEDIA DEL   &lm NAV BSPC    &lm MOUSE TAB    &lm SYM SPACE  &lm NUM RET     &lm FN ESC
         >;
     };
 
     media_layer {
             label = "MEDIA";
             bindings = <
-                &trans      &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans 
-                &trans      &kp LGUI    &kp LALT    &kp LCTRL       &kp LSHIFT      &trans          &trans          &kp C_PREV      &kp C_VOL_UP    &kp C_VOL_DN    &kp C_NEXT      &trans
-                &trans      &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans
-                                                    &trans          &trans          &trans          &kp C_STOP      &kp C_PLAY      &kp C_MUTE
+                &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          
+                &kp LGUI    &kp LALT    &kp LCTRL       &kp LSHIFT      &trans          &trans          &kp C_PREV      &kp C_VOL_UP    &kp C_VOL_DN    &kp C_NEXT      
+                &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans         
+                                        &trans          &trans          &trans          &kp C_STOP      &kp C_PLAY      &kp C_MUTE
             >;
     };
 
     nav_layer {
             label = "NAV";
             bindings = <
-                &trans      &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans 
-                &trans      &kp LGUI    &kp LALT    &kp LCTRL       &kp LSHIFT      &trans          &kp CAPS        &kp LEFT        &kp UP          &kp DOWN        &kp RIGHT       &trans
-                &trans      &kp LS(LG(S))      &kp LC(X)   &kp LC(C)       &kp LC(V)       &trans          &kp INS         &kp HOME        &kp PG_UP       &kp PG_DN       &kp END         &trans
-                                                    &trans          &trans          &trans          &kp SPACE       &kp RET         &kp ESC
+                &trans          &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans        
+                &kp LGUI        &kp LALT    &kp LCTRL       &kp LSHIFT      &trans          &kp CAPS        &kp LEFT        &kp UP          &kp DOWN        &kp RIGHT    
+                &kp LS(LG(S))   &kp LC(X)   &kp LC(C)       &kp LC(V)       &trans          &kp INS         &kp HOME        &kp PG_UP       &kp PG_DN       &kp END      
+                                            &trans          &trans          &trans          &kp SPACE       &kp RET         &kp ESC
             >;
     };
 
     mouse_layer {
             label = "MOUSE";
             bindings = <
-                &trans      &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans 
-                &trans      &kp LGUI    &kp LALT    &kp LCTRL       &kp LSHIFT      &trans          &trans          &trans          &trans          &trans          &trans          &trans
-                &trans      &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans
-                                                    &trans          &trans          &trans          &trans          &trans          &trans
+                &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans         
+                &kp LGUI    &kp LALT    &kp LCTRL       &kp LSHIFT      &trans          &trans          &trans          &trans          &trans          &trans          
+                &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          
+                                        &trans          &trans          &trans          &trans          &trans          &trans
             >;
     };
 
     symbol_layer {
             label = "SYMBOL";
             bindings = <
-                &trans      &kp EXCL            &kp AT      &kp HASH   &kp DLLR         &kp PRCNT           &kp CARET       &kp AMPS        &kp STAR        &kp TILDE       &trans          &trans
-                &trans      &kp SEMI            &kp EQUAL   &kp UNDER  &kp MINUS        &kp COLON           &kp PLUS        &kp RSHIFT      &kp RCTRL       &kp LALT        &kp RGUI        &trans
-                &trans      &kp LC(LA(N5))      &trans      &trans     &kp PLUS         &kp GRAVE           &trans          &trans          &trans          &trans          &kp PIPE        &trans
-                                                            &kp DEL    &kp BSPC         &kp TAB             &trans          &trans          &trans
+                &kp EXCL            &kp AT      &kp HASH   &kp DLLR         &kp PRCNT           &kp CARET       &kp AMPS        &kp STAR        &kp TILDE       &trans         
+                &kp SEMI            &kp EQUAL   &kp UNDER  &kp MINUS        &kp COLON           &kp PLUS        &kp RSHIFT      &kp RCTRL       &kp LALT        &kp RGUI        
+                &kp LC(LA(N5))      &trans      &trans     &kp PLUS         &kp GRAVE           &trans          &trans          &trans          &trans          &kp PIPE        
+                                                &kp DEL    &kp BSPC         &kp TAB             &trans          &trans          &trans
             >;
     };
 
     num_layer {
             label = "NUMBER";
             bindings = <
-                &trans      &trans      &trans      &kp LBKT        &kp RBKT        &trans          &kp COMMA    &kp N7         &kp N8          &kp N9      &trans          &trans 
-                &trans      &trans      &trans      &kp LPAR        &kp RPAR        &trans          &kp DOT      &kp N4         &kp N5          &kp N6      &trans          &trans
-                &trans      &trans      &trans      &kp LBRC        &kp RBRC        &trans          &kp N0       &kp N1         &kp N2          &kp N3      &trans          &trans
-                                                    &kp DEL         &kp BSPC        &kp TAB         &trans       &trans         &trans
+                &trans      &trans      &kp LBKT        &kp RBKT        &trans          &kp COMMA    &kp N7         &kp N8          &kp N9      &trans 
+                &trans      &trans      &kp LPAR        &kp RPAR        &trans          &kp DOT      &kp N4         &kp N5          &kp N6      &trans          
+                &trans      &trans      &kp LBRC        &kp RBRC        &trans          &kp N0       &kp N1         &kp N2          &kp N3      &trans          
+                                        &kp DEL         &kp BSPC        &kp TAB         &trans       &trans         &trans
             >;
     };
 
     fn_layer {
             label = "FN";
             bindings = <
-                &trans      &kp F12     &kp F7      &kp F8     &kp F9       &trans                  &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4 
-                &trans      &kp F11     &kp F4      &kp F5     &kp F6       &trans                  &trans          &kp RSHIFT      &kp RCTRL       &kp LALT        &kp RGUI        &trans
-                &trans      &kp F10     &kp F1      &kp F2     &kp F3       &trans                  &trans          &trans          &trans          &trans          &trans          &trans
-                                                    &trans     &trans       &trans                  &trans          &trans          &trans
+                &kp F12     &kp F7      &kp F8     &kp F9       &trans                  &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    
+                &kp F11     &kp F4      &kp F5     &kp F6       &trans                  &trans          &kp RSHIFT      &kp RCTRL       &kp LALT        &kp RGUI        
+                &kp F10     &kp F1      &kp F2     &kp F3       &trans                  &trans          &trans          &trans          &trans          &trans          
+                                        &trans     &trans       &trans                  &trans          &trans          &trans
             >;
     };
   };
