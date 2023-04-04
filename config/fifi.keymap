@@ -54,70 +54,70 @@
         // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
         //   
         bindings = <      
-            &kp Q       &kp W       &kp E           &kp R           &kp T            &kp Y          &kp U           &kp I           &kp O       &kp P           
-            &hl LGUI A  &hl LALT S  &hl LCTRL D     &hm LSHIFT F    &kp G            &kp H          &hm RSHIFT J    &hm RCTRL K     &hm LALT L  &hm RGUI SEMI   
-            &kp Z       &kp X       &kp C           &kp V           &kp B            &kp N          &kp M           &kp COMMA       &kp DOT     &kp FSLH       
-                                    &lm MEDIA DEL   &lm NAV BSPC    &lm MOUSE TAB    &lm SYM SPACE  &lm NUM RET     &lm FN ESC
-        >;
+            &kp Q               &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           
+            &hl LGUI A          &hl LALT S      &hl LCTRL D     &hm LSHIFT F    &kp G           &kp H           &hm RSHIFT J    &hm RCTRL K     &hm LALT L      &hm RGUI SEMI   
+            &kp Z               &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH       
+                                                &lm MEDIA DEL   &lm NAV BSPC    &lm MOUSE TAB   &lm SYM SPACE   &lm NUM RET     &lm FN ESC  
+        >;      
     };
 
     media_layer {
             label = "MEDIA";
             bindings = <
-                &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          
-                &kp LGUI    &kp LALT    &kp LCTRL       &kp LSHIFT      &trans          &trans          &kp C_PREV      &kp C_VOL_UP    &kp C_VOL_DN    &kp C_NEXT      
-                &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans         
-                                        &trans          &trans          &trans          &kp C_STOP      &kp C_PLAY      &kp C_MUTE
+                &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          
+                &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHIFT      &trans          &trans          &kp C_PREV      &kp C_VOL_UP    &kp C_VOL_DN    &kp C_NEXT      
+                &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans         
+                                                &trans          &trans          &trans          &kp C_STOP      &kp C_PLAY      &kp C_MUTE
             >;
     };
 
     nav_layer {
             label = "NAV";
             bindings = <
-                &trans          &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans        
-                &kp LGUI        &kp LALT    &kp LCTRL       &kp LSHIFT      &trans          &kp CAPS        &kp LEFT        &kp UP          &kp DOWN        &kp RIGHT    
-                &kp LS(LG(S))   &kp LC(X)   &kp LC(C)       &kp LC(V)       &trans          &kp INS         &kp HOME        &kp PG_UP       &kp PG_DN       &kp END      
-                                            &trans          &trans          &trans          &kp SPACE       &kp RET         &kp ESC
+                &trans          &trans          &trans          &trans          &trans          &kp PG_UP       &trans          &trans          &trans          &trans        
+                &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHIFT      &trans          &kp PG_DN       &kp LEFT        &kp UP          &kp DOWN        &kp RIGHT    
+                &LC(Z)          &kp LC(X)       &kp LC(C)       &kp LC(V)       &LC(Y)          &kp INS         &kp HOME        &kp END         &kp CAPS        &trans      
+                                                &trans          &trans          &trans          &kp SPACE       &kp RET         &kp ESC
             >;
     };
 
     mouse_layer {
             label = "MOUSE";
             bindings = <
-                &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans         
-                &kp LGUI    &kp LALT    &kp LCTRL       &kp LSHIFT      &trans          &trans          &trans          &trans          &trans          &trans          
-                &trans      &trans      &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          
-                                        &trans          &trans          &trans          &trans          &trans          &trans
+                &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader     &trans          &trans          &trans          &trans          &trans         
+                &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHIFT      &trans          &trans          &trans          &trans          &trans          &trans          
+                &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          
+                                                &trans          &trans          &trans          &trans          &trans          &trans
             >;
     };
 
     symbol_layer {
             label = "SYMBOL";
             bindings = <
-                &kp EXCL            &kp AT      &kp HASH   &kp DLLR         &kp PRCNT           &kp CARET       &kp AMPS        &kp STAR        &kp TILDE       &trans         
-                &kp SEMI            &kp EQUAL   &kp UNDER  &kp MINUS        &kp COLON           &kp PLUS        &kp RSHIFT      &kp RCTRL       &kp LALT        &kp RGUI        
-                &kp LC(LA(N5))      &trans      &trans     &kp PLUS         &kp GRAVE           &trans          &trans          &trans          &trans          &kp PIPE        
-                                                &kp DEL    &kp BSPC         &kp TAB             &trans          &trans          &trans
+                &kp EXCL        &kp AT          &kp HASH        &kp DLLR         &kp PRCNT      &trans          &trans          &trans          &trans          &trans         
+                &kp EQUAL       &kp UNDER       &kp MINUS       &kp PLUS         &kp COLON      &trans          &kp RSHIFT      &kp RCTRL       &kp LALT        &kp RGUI        
+                &kp CARET       &kp AMPS        &kp STAR        &kp TILDE        &kp GRAVE      &trans          &trans          &trans          &trans          &trans       
+                                                &kp APOS        &kp BSPC         &kp PIPE       &trans          &trans          &trans
             >;
     };
 
     num_layer {
             label = "NUMBER";
             bindings = <
-                &trans      &trans      &kp LBKT        &kp RBKT        &trans          &kp COMMA    &kp N7         &kp N8          &kp N9      &trans 
-                &trans      &trans      &kp LPAR        &kp RPAR        &trans          &kp DOT      &kp N4         &kp N5          &kp N6      &trans          
-                &trans      &trans      &kp LBRC        &kp RBRC        &trans          &kp N0       &kp N1         &kp N2          &kp N3      &trans          
-                                        &kp DEL         &kp BSPC        &kp TAB         &trans       &trans         &trans
+                &trans          &trans          &kp LBKT        &kp RBKT        &trans          &kp COMMA       &kp N7         &kp N8           &kp N9          &kp PLUS 
+                &trans          &trans          &kp LPAR        &kp RPAR        &trans          &kp DOT         &kp N4         &kp N5           &kp N6          &kp MINUS          
+                &trans          &trans          &kp LBRC        &kp RBRC        &trans          &kp N0          &kp N1         &kp N2           &kp N3          &kp STAR          
+                                                &kp DEL         &kp BSPC        &kp TAB         &trans          &trans         &trans
             >;
     };
 
     fn_layer {
             label = "FN";
             bindings = <
-                &kp F12     &kp F7      &kp F8     &kp F9       &trans                  &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    
-                &kp F11     &kp F4      &kp F5     &kp F6       &trans                  &trans          &kp RSHIFT      &kp RCTRL       &kp LALT        &kp RGUI        
-                &kp F10     &kp F1      &kp F2     &kp F3       &trans                  &trans          &trans          &trans          &trans          &trans          
-                                        &trans     &trans       &trans                  &trans          &trans          &trans
+                &kp F12         &kp F7          &kp F8          &kp F9          &kp PSCRN       &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader    
+                &kp F11         &kp F4          &kp F5          &kp F6          &kp SLCK        &trans          &kp RSHIFT      &kp RCTRL       &kp LALT        &kp RGUI        
+                &kp F10         &kp F1          &kp F2          &kp F3          &kp PAUSE_BREAK &trans          &trans          &trans          &trans          &trans          
+                                                &trans          &trans          &trans          &trans          &trans          &trans
             >;
     };
   };
