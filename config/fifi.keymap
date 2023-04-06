@@ -5,13 +5,13 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define QWERTY 0
-#define MEDIA 1
-#define NAV 2
-#define MOUSE 3
-#define SYM 4
-#define NUM 5
-#define FN 6
-
+#define COLEMAK 1
+#define MEDIA 2
+#define NAV 3
+#define MOUSE 4
+#define SYM 5
+#define NUM 6
+#define FN 7   
 
 / {
   behaviors {
@@ -62,6 +62,16 @@
         >;      
     };
 
+    colemak_layer {
+        label = "COLEMAK"; 
+        bindings = <      
+            &kp Q               &kp W           &kp F           &kp P           &kp B           &kp J           &kp L           &kp U           &kp Y           &kp APOS        
+            &hl LGUI A          &hl LALT R      &hl LCTRL S     &hm LSHIFT T    &kp G           &kp M           &hm RSHIFT N    &hm RCTRL E     &hm LALT I      &hm RGUI O  
+            &kp Z               &kp X           &kp C           &kp D           &kp V           &kp K           &kp H           &kp COMMA       &kp DOT         &kp FSLH       
+                                                &lm MEDIA DEL   &lm NAV BSPC    &lm MOUSE TAB   &lm SYM SPACE   &lm NUM RET     &lm FN ESC  
+        >;      
+    };
+
     media_layer {
             label = "MEDIA";
             bindings = <
@@ -87,7 +97,7 @@
             bindings = <
                 &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader     &trans          &trans          &trans          &trans          &trans         
                 &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHIFT      &trans          &trans          &trans          &trans          &trans          &trans          
-                &trans          &trans          &trans          &trans          &tog QWERTY     &trans          &trans          &trans          &trans          &trans          
+                &trans          &trans          &trans          &trans          &transf         &trans          &trans          &trans          &trans          &trans          
                                                 &trans          &trans          &trans          &trans          &trans          &trans
             >;
     };
@@ -116,7 +126,7 @@
             label = "FN";
             bindings = <
                 &kp F12         &kp F7          &kp F8          &kp F9          &kp PSCRN       &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader    
-                &kp F11         &kp F4          &kp F5          &kp F6          &kp SLCK        &trans          &kp RSHIFT      &kp RCTRL       &kp LALT        &kp RGUI        
+                &kp F11         &kp F4          &kp F5          &kp F6          &kp SLCK        &tog COLEMAK    &kp RSHIFT      &kp RCTRL       &kp LALT        &kp RGUI        
                 &kp F10         &kp F1          &kp F2          &kp F3          &kp PAUSE_BREAK &tog QWERTY     &trans          &trans          &trans          &trans          
                                                 &trans          &trans          &trans          &trans          &trans          &trans
             >;
