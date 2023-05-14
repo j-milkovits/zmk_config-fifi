@@ -12,6 +12,7 @@
 #define SYM 5
 #define NUM 6
 #define FN 7   
+#define GAMING 8
 
 / {
   behaviors {
@@ -64,7 +65,7 @@
 
     colemak_layer {
         label = "COLEMAK"; 
-        bindings = <      
+        bindings = <   
             &kp Q               &kp W           &kp F           &kp P           &kp B           &kp J           &kp L           &kp U           &kp Y           &kp APOS        
             &hl LGUI A          &hl LALT R      &hl LCTRL S     &hm LSHIFT T    &kp G           &kp M           &hm RSHIFT N    &hm RCTRL E     &hm LALT I      &hm RGUI O  
             &kp Z               &kp X           &kp C           &kp D           &kp V           &kp K           &kp H           &kp COMMA       &kp DOT         &kp FSLH       
@@ -127,9 +128,19 @@
             bindings = <
                 &kp F12         &kp F7          &kp F8          &kp F9          &kp PSCRN       &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader    
                 &kp F11         &kp F4          &kp F5          &kp F6          &kp SLCK        &tog COLEMAK    &kp RSHIFT      &kp RCTRL       &kp LALT        &kp RGUI        
-                &kp F10         &kp F1          &kp F2          &kp F3          &kp PAUSE_BREAK &tog QWERTY     &trans          &trans          &trans          &trans          
+                &kp F10         &kp F1          &kp F2          &kp F3          &kp PAUSE_BREAK &tog QWERTY     &trans          &trans          &trans          &tog GAMING           
                                                 &trans          &trans          &trans          &trans          &trans          &trans
             >;
+    };
+
+    gaming_layer {
+        label = "GAMING"; 
+        bindings = <      
+            &kp TAB             &kp Q           &kp W           &kp E           &kp R           &trans           &trans         &trans          &trans          &trans           
+            &kp LSHIFT          &kp A           &kp S           &kp D           &kp F           &trans           &trans         &trans          &trans          &trans
+            &kp LCTRL           &kp Z           &kp X           &kp C           &kp V           &trans           &trans         &trans          &trans          &tog GAMING       
+                                                &kp RET         &kp SPACE       &kp ESC         &trans           &trans         &trans  
+        >;      
     };
   };
 };
